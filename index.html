@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{LANG}}" data-motion="on">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <meta name="author" content="{{AUTHOR}}" />
+    <link rel="canonical" href="{{CANONICAL}}" />
+    <meta name="theme-color" content="{{THEME_COLOR}}" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="{{FAVICON}}" type="image/svg+xml" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="{{SITE_NAME}}" />
+    <meta property="og:title" content="{{OG_TITLE}}" />
+    <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+    <meta property="og:url" content="{{OG_URL}}" />
+    <meta property="og:image" content="{{OG_IMAGE}}" />
+    <meta property="og:image:alt" content="{{OG_IMAGE_ALT}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{OG_TITLE}}" />
+    <meta name="twitter:description" content="{{OG_DESCRIPTION}}" />
+    <meta name="twitter:image" content="{{OG_IMAGE}}" />
+
+    {{MOTION_SCRIPT}}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="{{FONTS_URL}}" />
+    {{HERO_PRELOAD}}
+    <style>{{TOKENS}}</style>
+    <link rel="stylesheet" href="{{CSS}}" />
+    <script type="application/ld+json">{{JSON_LD}}</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>{{NOSCRIPT}}</noscript>
+    <script type="module" src="{{JS}}"></script>
+    {{DEV_RELOAD}}
+  </body>
+</html>

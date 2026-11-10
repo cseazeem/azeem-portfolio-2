@@ -1,0 +1,25 @@
+{
+  "name": "azeem-portfolio-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website of Mohd Azeem — Full Stack Software Engineer (Backend & AI Systems).",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --dev",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && node scripts/check.mjs",
+    "preview": "node scripts/build.mjs --preview"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "framer-motion": "12.43.0",
+    "lucide-react": "1.70.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
